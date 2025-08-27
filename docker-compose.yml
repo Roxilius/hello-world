@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"   # Akses di http://localhost:5173
+    restart: always
